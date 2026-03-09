@@ -1,7 +1,7 @@
 <?php 
-$prenoms = ["Ines", "Badr","Yuliia","Bryan","Soufiane","Laetitia" ,"Meidhy","Raphaël","Robin","Jean"];
+$prenoms = ["Inès", "Badr","Yuliia","Bryan","Soufiane","Laetitia" ,"Meidhy","Raphaël","Robin","Jean"];
 
 foreach ($prenoms as $prenom) {
-    echo "<li> $prenom</li>";
+    echo "<ul><li> $prenom</li></ul>";
 }
 ?>
