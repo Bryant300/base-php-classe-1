@@ -42,7 +42,17 @@ Mettez-y des `.gitkeep` dans chaque nouveau dossier et faites des commit
 **AVANT** la création de `Stagiaire\Bryan\mvc-19\config.php`, ouvrez `.gitignore` et mettez-y :
 
 ```bash
-
 # Stagiaire\Bryan\mvc-19\.gitignore
 
+# On protège nos variables et constantes dangereuses
+# du fichier config.php
+config.php
 ```
+
+Créez le fichier `config.php` à la racine du projet. Il est protégé grâceau `.gitconfig`
+
+### Phase 3
+
+#### Création du controlleur frontal
+
+Le front controller, nommé ``public/index.php`, est le seul fichier `php` qui sera accesible à un utilisateur externe.
