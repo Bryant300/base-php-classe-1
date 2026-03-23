@@ -1,6 +1,6 @@
 # Exercice MVC | mvc-19
 
-##Marche a suivre préparation TI1
+## Marche a suivre préparation TI1
 
 ### Phase 1
 
@@ -22,3 +22,13 @@
 - Création du `.gitignore` vide
 - Dossier vide ? `.gitkep`
 - Informer sur le projet ? `README.md`
+
+### Phase 2
+
+Création des dossiers importants du site pour le MVC (Model View Controller)
+
+- `public` accessible à tous (**Frontend**)
+- `model` Dossier qui gère l'accés aux données (**Backend**)
+- `view` Dossier contenant les vues (templates **Backend**)
+- `controller` Dossier qui gère le lien entre les `view` et les `model` (Entre **Backend** et **Middle-end**)
+- `datas` - nos fichiers de préparation du travail
