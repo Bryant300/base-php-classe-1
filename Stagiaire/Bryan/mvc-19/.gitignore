@@ -1,5 +1,10 @@
-# Stagiaire\Bryan\mvc-19\.gitignore
+# Stagiaire/Robin/mvc-19/.gitignore
 
 # On protège nos variables et constantes dangereuses
 # du fichier config.php
 config.php
+
+# On refuse tout les fichiers de datas 
+datas/*
+# Sauf le fichier zipper 
+!datas/projet.zip

@@ -1,26 +1,28 @@
 # Exercice MVC | mvc-19
 
-## Marche a suivre préparation TI1
+## Marche à suivre préparation TI1
 
 ### Phase 1
 
-1. On part de votre ordinateur :
+1. On part de votre ordinateur
 
-- création d'un dossier sur votre ordinateur : `git init`
+- Création d'un dossier sur votre ordinateur : `git init`
 - Création d'un `repository` sur `Github`, puis on le lie en local : `git remote add origin KEY@SSH`
 
 #### Ou
 
-2. On part de 'Github' :
+2. On part de `Github`
 
-- On crée un `fork`' du `repository` "**upstream**" sur `Github`
-- On clone le `fork` du `repository` depuis `Github` (utilisation de 'SSH' de préférence) sur votre ordinateur mais **pas dans un projet git existant ni un endroit suivi par une synchronisation (OneDrive, Dropox, ICloud etc,...)**
-- Ajout de l'upstream (pour le `pull request final` final) : `git remote add upstream KEY@SSh`
+- On crée un `fork` du `repository` "**upstream**" depuis `Github`
+- On clone le `fork` du `repository` depuis `Github` (utilisation de `SSH` de préférence) sur votre ordinateur mais **pas dans un projet git existant ni un endroit suivi par une synchronisation (OneDrive, Dropbox, iCloud etc..., )**
 
 #### Ensuite
 
-- Création du `.gitignore` vide
-- Dossier vide ? `.gitkep`
+- Ajout de l'upstream (pour le `pull request` final) : `git remote add upstream KEY@SSH`
+
+- Création du `.gitignore` vide (**! Important**)
+
+- Dossiers vide ? `.gitkeep`
 - Informer sur le projet ? `README.md`
 
 ### Phase 2
@@ -28,31 +30,41 @@
 Création des dossiers importants du site pour le MVC (Model View Controller)
 
 - `public` accessible à tous (**Frontend**)
-- `model` Dossier qui gère l'accés aux données (**Backend**)
+- `model` Dossier qui gère l'accès aux données (**Backend**)
 - `view` Dossier contenant les vues (templates **Backend**)
 - `controller` Dossier qui gère le lien entre les `view` et les `model` (Entre **Backend** et **Middle-end**)
 - `datas` - nos fichiers de préparation du travail
 
 #### .gitkeep
 
-Mettez-y des `.gitkeep` dans chaque nouveau dossier et faites des commit
+Mettez-y des `.gitkeep` dans chaque dossier et faîtes des commit.
 
 #### Création du config.php
 
-**AVANT** la création de `Stagiaire\Bryan\mvc-19\config.php`, ouvrez `.gitignore` et mettez-y :
+**AVANT** la création de `Stagiaire/Robin/mvc-19/config.php`, ouvrez `.gitignore` et mettez-y :
 
 ```bash
-# Stagiaire\Bryan\mvc-19\.gitignore
+# Stagiaire/Robin/mvc-19/.gitignore
 
 # On protège nos variables et constantes dangereuses
 # du fichier config.php
 config.php
+
+# __DIR__ constante magique qui donnera
+# le chemin absolu vers la racine du projet
+const ROOT_PATH = __DIR__;
 ```
 
-Créez le fichier `config.php` à la racine du projet. Il est protégé grâceau `.gitconfig`
+Créez le fichier `config.php` à la racine du projet. Il est protégé grâce au `.gitconfig`.
 
 ### Phase 3
 
-#### Création du controlleur frontal
+#### Création du contrôlleur frontal
 
-Le front controller, nommé ``public/index.php`, est le seul fichier `php` qui sera accesible à un utilisateur externe.
+Le front controller, nommé `public/index.php`, est le seul fichier `php` qui sera accessible à un utilisateur externe
+
+#### Création du config.php
+
+Il va devoir recréer config.php pour accéder aux constantes de sécurité.
+
+        cp config.ini.php.config.php
