@@ -5,4 +5,4 @@ if ($temperature <= 0) {
     echo "L'eau est liquide à {$temperature}°";
 } else {
     echo "L'eau est gazeuse à {$temperature}°";
-}
+} 
