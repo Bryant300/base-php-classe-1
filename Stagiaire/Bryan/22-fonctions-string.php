@@ -11,7 +11,7 @@ function inverserMot($mot) {
 }
 
 // Test
-$mot = "Bonjour";
+$mot = "Aurevoir";
 echo inverserMot($mot);
 
 ?>
